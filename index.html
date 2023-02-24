@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - Películas y Series</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-gray-900 text-white py-4">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4"
+      >
+        <div class="flex items-center">
+          <img src="img/logo.png" class="h-8 w-auto mr-2" />
+          <h1 class="font-bold text-lg inline-block">Películas y Series</h1>
+        </div>
+        <form
+          class="mt-4 md:mt-0 md:ml-4 flex flex-row items-center w-full sm:w-full md:w-auto"
+          action="search-results.html"
+          method="GET"
+        >
+          <div class="relative w-full sm:w-full md:w-auto">
+            <input
+              class="p-2 rounded-l-lg w-full md:w-auto"
+              type="text"
+              placeholder="Buscar serie o pelicula..."
+            />
+            <button
+              type="submit"
+              class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-r-lg absolute top-0 right-0 h-full md:h-auto md:absolute md:top-0 md:right-auto md:rounded-l-none md:rounded-r-lg"
+            >
+              Buscar
+            </button>
+          </div>
+        </form>
+        <nav class="md:flex md:items-center">
+          <ul class="flex md:flex-row md:gap-4 md:ml-4 mt-4 md:mt-0 gap-4">
+            <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
+            <li>
+              <a href="detail-movie.html" class="hover:text-gray-400"
+                >Películas</a
+              >
+            </li>
+            <li>
+              <a href="detail-serie.html" class="hover:text-gray-400">Series</a>
+            </li>
+            <li>
+              <a href="favorites.html" class="hover:text-gray-400">Favoritos</a>
+            </li>
+            <li>
+              <a href="genre.html" class="hover:text-gray-400">Géneros</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-4">
+      <h2 class="font-bold text-2xl mb-4">Películas populares</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
+        <a
+          href="detail-movie.html#mision"
+          class="block relative"
+          title="Película favorita"
+        >
+          <span
+            class="absolute top-0 right-0 inline-block p-1 bg-yellow-400 rounded-full text-gray-900 m-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </span>
+          <img
+            src="img/peliculas/june.jpg"
+            alt="Indiana Jones y el Dial del Destino"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">
+            Indiana Jones y el Dial del Destino
+          </h3>
+          <p class="text-sm">Fecha de estreno: 12 de Enero de 2022</p>
+        </a>
+        <a
+          href="detail-movie.html#flower"
+          class="block relative"
+          title="Película favorita"
+        >
+          <span
+            class="absolute top-0 right-0 inline-block p-1 bg-yellow-400 rounded-full text-gray-900 m-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </span>
+          <img
+            src="img/peliculas/killers.jpg"
+            alt="Killers of the Flower Moon"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Killers of the Flower Moon</h3>
+          <p class="text-sm">Fecha de estreno: 08 de Abril de 2022</p>
+        </a>
+        <a href="detail-movie.html#oppenheimer" class="block">
+          <img
+            src="img/peliculas/oppenheimer.jpg"
+            alt="Oppenheimer"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Oppenheimer</h3>
+          <p class="text-sm">Fecha de estreno: 03 de Febrero de 2021</p>
+        </a>
+        <a href="detail-movie.html#killer" class="block">
+          <img
+            src="img/peliculas/thekiller.jpg"
+            alt="El asesino (The Killer)"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">El asesino (The Killer)</h3>
+          <p class="text-sm">Fecha de estreno: 07 de Marzo de 2020</p>
+        </a>
+        <a href="detail-movie.html#napoleon" class="block">
+          <img
+            src="img/peliculas/napoleon.jpg"
+            alt="Napoleón"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Napoleón</h3>
+          <p class="text-sm">Fecha de estreno: 12 de Julio de 2019</p>
+        </a>
+      </div>
+
+      <h2 class="font-bold text-2xl mt-8 mb-4">Series populares</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
+        <a href="detail-serie.html#tronos" class="block">
+          <img
+            src="img/series/tronos.jpg"
+            alt="Juego de Tronos"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Juego de Tronos</h3>
+          <p class="text-sm">Fecha de estreno: 5 de Mayo de 2020</p>
+        </a>
+        <a
+          href="detail-serie.html"
+          class="block relative"
+          title="Serie favorita"
+        >
+          <span
+            class="absolute top-0 right-0 inline-block p-1 bg-yellow-400 rounded-full text-gray-900 m-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </span>
+          <img
+            src="img/series/planeta.jpg#planeta"
+            alt="Nuestro planeta"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Nuestro planeta</h3>
+          <p class="text-sm">Fecha de estreno: 18 de Septiembre de 2021</p>
+        </a>
+        <a href="detail-serie.html#chernobyl" class="block">
+          <img
+            src="img/series/chernobyl.jpg"
+            alt="Chernobyl "
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Chernobyl</h3>
+          <p class="text-sm">Fecha de estreno: 12 de Mayo de 2018</p>
+        </a>
+        <a
+          href="detail-serie.html#true"
+          class="block relative"
+          title="Serie favorita"
+        >
+          <span
+            class="absolute top-0 right-0 inline-block p-1 bg-yellow-400 rounded-full text-gray-900 m-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </span>
+          <img
+            src="img/series/true.jpg"
+            alt="True Detective"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">True Detective</h3>
+          <p class="text-sm">Fecha de estreno: 29 de Abril de 2015</p>
+        </a>
+        <a href="detail-serie.html#beatles" class="block">
+          <img
+            src="img/series/beatles.jpg"
+            alt="The Beatles: Get Back"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">The Beatles: Get Back</h3>
+          <p class="text-sm">Fecha de estreno: 4 de Junio de 2012</p>
+        </a>
+      </div>
+
+      <h2 class="font-bold text-2xl mt-8 mb-4">Lo más visto en series</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
+        <a href="detail-serie.html#better" class="block">
+          <img
+            src="img/series/_better.jpg"
+            alt="Better Call Saul"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Better Call Saul</h3>
+          <p class="text-sm">Fecha de estreno: 3 de Octubre de 2014</p>
+        </a>
+        <a href="detail-serie.html#cortar" class="block">
+          <img
+            src="img/series/_cortar.jpg"
+            alt="Cortar por la línea de puntos"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Cortar por la línea de puntos</h3>
+          <p class="text-sm">Fecha de estreno: 02 de Agosto de 2021</p>
+        </a>
+        <a href="detail-serie.html#fargo" class="block">
+          <img
+            src="img/series/_fargo.jpg"
+            alt="Fargo "
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Fargo</h3>
+          <p class="text-sm">Fecha de estreno: 23 de Septiembre de 2018</p>
+        </a>
+        <a href="detail-serie.html#hunter" class="block">
+          <img
+            src="img/series/_hanta.jpg"
+            alt="Hunter x Hunter"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Hunter x Hunter</h3>
+          <p class="text-sm">Fecha de estreno: 12 de Enero de 2015</p>
+        </a>
+        <a href="detail-serie.html#rick" class="block">
+          <img
+            src="img/series/_rick.jpg"
+            alt="Rick y Morty"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Rick y Morty</h3>
+          <p class="text-sm">Fecha de estreno: 7 de Febrero de 2012</p>
+        </a>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-4">
+      <div class="container mx-auto px-4">
+        <p class="text-center">
+          &copy; 2023 Películas y Series by Jose Ramón Terol Borrás
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

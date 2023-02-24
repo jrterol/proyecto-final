@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - Películas y Series</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-gray-900 text-white py-4">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4"
+      >
+        <div class="flex items-center">
+          <img src="img/logo.png" class="h-8 w-auto mr-2" />
+          <h1 class="font-bold text-lg inline-block">Películas y Series</h1>
+        </div>
+        <form
+          class="mt-4 md:mt-0 md:ml-4 flex flex-row items-center w-full sm:w-full md:w-auto"
+          action="#"
+          method="GET"
+        >
+          <div class="relative w-full sm:w-full md:w-auto">
+            <input
+              class="p-2 rounded-l-lg w-full md:w-auto"
+              type="text"
+              placeholder="Buscar serie o pelicula..."
+            />
+            <button
+              class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-r-lg absolute top-0 right-0 h-full md:h-auto md:absolute md:top-0 md:right-auto md:rounded-l-none md:rounded-r-lg"
+            >
+              Buscar
+            </button>
+          </div>
+        </form>
+        <nav class="md:flex md:items-center">
+          <ul class="flex md:flex-row md:gap-4 md:ml-4 mt-4 md:mt-0 gap-4">
+            <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
+            <li>
+              <a href="detail-movie.html" class="hover:text-gray-400">Películas</a>
+            </li>
+            <li>
+              <a href="detail-serie.html" class="hover:text-gray-400">Series</a>
+            </li>
+            <li>
+              <a href="favorites.html" class="hover:text-gray-400">Favoritos</a>
+            </li>
+            <li>
+              <a href="genre.html" class="hover:text-gray-400">Géneros</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-4 mb-16">
+      <h2 id="accion" class="font-bold text-2xl mb-4">Acción</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
+        <a href="detail-movie.html#mision" class="block">
+          <img
+            src="img/peliculas/june.jpg"
+            alt="Indiana Jones y el Dial del Destino"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">
+            Indiana Jones y el Dial del Destino
+          </h3>
+        </a>
+        <a href="detail-serie.html#true" class="block relative">
+          <img
+            src="img/series/true.jpg"
+            alt="True Detective"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">True Detective</h3>
+        </a>
+
+        <a href="detail-serie.html#hunter" class="block">
+          <img
+            src="img/series/_hanta.jpg"
+            alt="Hunter x Hunter"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Hunter x Hunter</h3>
+        </a>
+      </div>
+      <h2 id="drama" class="font-bold text-2xl mb-4">Drama</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
+        <a href="detail-movie.html#flower" class="block relative">
+          <img
+            src="img/peliculas/killers.jpg"
+            alt="Killers of the Flower Moon"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Killers of the Flower Moon</h3>
+        </a>
+        <a href="detail-movie.html#killer" class="block">
+          <img
+            src="img/peliculas/thekiller.jpg"
+            alt="El asesino (The Killer)"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">El asesino (The Killer)</h3>
+        </a>
+
+        <a href="detail-serie.html#beatles" class="block">
+          <img
+            src="img/series/beatles.jpg"
+            alt="The Beatles: Get Back"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">The Beatles: Get Back</h3>
+        </a>
+
+        <a href="detail-serie.html#rick" class="block">
+          <img
+            src="img/series/_rick.jpg"
+            alt="Rick y Morty"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Rick y Morty</h3>
+        </a>
+      </div>
+      <h2 id="comedia" class="font-bold text-2xl mb-4">Comedia</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
+        <a
+          href="detail-movie.html#mision"
+          class="block"
+          title="Película favorita"
+        >
+          <img
+            src="img/peliculas/oppenheimer.jpg"
+            alt="Oppenheimer"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Oppenheimer</h3>
+        </a>
+        <a
+          href="detail-serie.html"
+          class="block relative"
+          title="Serie favorita"
+        >
+          <img
+            src="img/series/planeta.jpg#planeta"
+            alt="Nuestro planeta"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Nuestro planeta</h3>
+        </a>
+
+        <a href="detail-serie.html#cortar" class="block">
+          <img
+            src="img/series/_cortar.jpg"
+            alt="Cortar por la línea de puntos"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Cortar por la línea de puntos</h3>
+        </a>
+      </div>
+      <h2 id="thriller" class="font-bold text-2xl mb-4">Thriller</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
+        <a href="detail-movie.html#mision" class="block">
+          <img
+            src="img/peliculas/oppenheimer.jpg"
+            alt="Oppenheimer"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Oppenheimer</h3>
+        </a>
+
+        <a href="detail-serie.html#chernobyl" class="block">
+          <img
+            src="img/series/chernobyl.jpg"
+            alt="Chernobyl "
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Chernobyl</h3>
+        </a>
+
+        <a href="detail-serie.html#fargo" class="block">
+          <img
+            src="img/series/_fargo.jpg"
+            alt="Fargo "
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Fargo</h3>
+        </a>
+      </div>
+      <h2 id="musical" class="font-bold text-2xl mb-4">Musical</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+      >
+        <a href="detail-movie.html#killer" class="block">
+          <img
+            src="img/peliculas/thekiller.jpg"
+            alt="El asesino (The Killer)"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">El asesino (The Killer)</h3>
+        </a>
+        <a href="detail-serie.html#tronos" class="block">
+          <img
+            src="img/series/tronos.jpg"
+            alt="Juego de Tronos"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Juego de Tronos</h3>
+        </a>
+        <a href="detail-serie.html#better" class="block">
+          <img
+            src="img/series/_better.jpg"
+            alt="Better Call Saul"
+            class="w-full h-64 object-cover"
+          />
+          <h3 class="font-bold text-lg mt-2">Better Call Saul</h3>
+        </a>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-4 fixed bottom-0 w-full">
+      <div class="container mx-auto px-4">
+        <p class="text-center">
+          &copy; 2023 Películas y Series by Jose Ramón Terol Borrás
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
